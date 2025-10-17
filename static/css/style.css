@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f9;
+    color: #0f0f0f;
+}
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: cyan !important;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #00d4ff !important;
+}
+
+.custom-navbar.scrolled {
+    background-color: #fff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar.scrolled .nav-link {
+    color: #007bff !important;
+}
+
+section {
+    padding: 100px 0;
+}
+
+#history {
+    background-color: #e3f2fd;
+    color: #0f0f0f;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+#vision {
+    background-color: #dcedc8;
+    color: #0f0f0f;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+#founder {
+    background-color: #fff3e0;
+    color: #0f0f0f;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+#founder .card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#founder .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.footer {
+    background-color: #212121;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.footer .list-inline-item i {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .list-inline-item i:hover {
+    color: #00d4ff;
+}
+
+img.img-fluid {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* optional: aligns dropdown neatly */
+}
+
+/* Optional smooth effect */
+.dropdown-menu {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Optional: add pointer cursor */
+.nav-item.dropdown:hover>.nav-link {
+    cursor: pointer;
+}
